@@ -1,0 +1,14 @@
+{
+    "production": {
+        "timeout_seconds": 120,
+        "profile_name": "livioso",
+        "project_name": "reddit2youtube",
+        "runtime": "python3.6",
+        "s3_bucket": "zappa-reddit2youtube",
+        "use_apigateway": false,
+        "events": [{
+          "function": "src.main.work",
+          "expression": "rate(30 minutes)"
+       }]
+    }
+}
