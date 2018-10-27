@@ -1,6 +1,5 @@
 import requests
 import json
-import os
 
 
 def get_access_token(client_id, client_secret, refresh_token):
